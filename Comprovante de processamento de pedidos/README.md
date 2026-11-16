@@ -100,7 +100,7 @@ O projeto usa apenas recursos nativos do Python, sem bibliotecas externas.
 
 | Arquivo | Descrição |
 |---------|-----------|
-| `<nome-do-arquivo>.py` | Programa que imprime o comprovante do pedido |
+| `processamento_pedidos.py` | Programa que imprime o comprovante do pedido |
 | `README.md` | Documentação do desafio |
 
 ---
