@@ -94,7 +94,7 @@ O projeto usa apenas recursos nativos do Python, sem bibliotecas externas.
 
 ```text
 .
-├── <nome-do-arquivo>.py
+├── processamento_pedidos.py
 └── README.md
 ```
 
