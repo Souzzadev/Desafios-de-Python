@@ -1,8 +1,8 @@
 <div align="center">
 
-# Comprovante de Processamento de Pedidos
+# Comprovante de processamento de pedidos
 
-**Programa em Python que gera, no terminal, um comprovante textual organizado para um pedido de loja virtual.**
+**Script em Python que armazena os dados de um pedido em variáveis e listas, processa as informações dos produtos e gera um comprovante organizado no terminal.**
 
 ![Python](https://img.shields.io/badge/Python-3-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Terminal](https://img.shields.io/badge/Interface-Terminal-4D4D4D?style=for-the-badge&logo=gnubash&logoColor=white)
@@ -16,10 +16,8 @@
 
 - [Sobre o projeto](#sobre-o-projeto)
 - [Funcionalidades](#funcionalidades)
-- [Regras de negócio](#regras-de-negócio)
 - [Dados do pedido](#dados-do-pedido)
-- [Tecnologias utilizadas](#tecnologias-utilizadas)
-- [Estrutura do comprovante](#estrutura-do-comprovante)
+- [Tecnologias e recursos utilizados](#tecnologias-e-recursos-utilizados)
 - [Estrutura do projeto](#estrutura-do-projeto)
 - [Como executar](#como-executar)
 - [Exemplo de utilização](#exemplo-de-utilização)
@@ -30,61 +28,59 @@
 
 ## Sobre o projeto
 
-Este projeto simula a saída de um módulo de processamento de pedidos de um sistema de e-commerce.
+Este projeto simula uma tarefa de estágio em Engenharia de Dados em uma empresa de comércio eletrônico: a equipe de operações precisa de um pequeno programa para organizar as informações dos pedidos feitos pelos clientes.
 
-**O problema:** depois que um pedido é processado, os funcionários da loja precisam visualizar rapidamente os dados da compra, sem procurar informações espalhadas pelo sistema.
+**O problema:** os dados de um pedido (número, cliente, produtos, preços e status) ficam separados e precisam ser reunidos em um documento fácil de conferir.
 
-**A solução:** um programa que exibe um comprovante textual com o número do pedido, o cliente, os produtos adquiridos, a quantidade, o valor total em reais e o status do pedido, separados em seções para facilitar a leitura.
+**A solução:** um script que armazena esses dados em variáveis e listas, calcula a quantidade de produtos e o valor total do pedido, seleciona o status atual e exibe tudo em um comprovante formatado no terminal.
 
 ---
+
 
 ## Funcionalidades
 
-- [x] Exibir o número do pedido
-- [x] Exibir o nome do cliente
-- [x] Exibir cada produto adquirido em uma linha, com seu valor
-- [x] Exibir a quantidade de produtos
-- [x] Exibir o valor total da compra em reais
-- [x] Exibir o status do pedido em destaque
-
----
-
-## Regras de negócio
-
-- O comprovante possui **cabeçalho**.
-- Os produtos aparecem **individualmente**, um por linha.
-- Os valores são identificados em **reais (R$)**.
-- O status aparece **em destaque textual**, em letras maiúsculas.
-- As seções são separadas por **caracteres decorativos**.
+- [x] Armazenar número do pedido e nome do cliente em variáveis
+- [x] Armazenar produtos, preços e status possíveis em listas
+- [x] Calcular a quantidade de produtos do pedido
+- [x] Calcular o valor total do pedido
+- [x] Selecionar o status atual do pedido ("Em Separação")
+- [x] Exibir a relação de produtos com seus respectivos preços
+- [x] Exibir valores em reais, com duas casas decimais e vírgula decimal
+- [x] Exibir o título centralizado e divisórias entre as seções
 
 ---
 
 ## Dados do pedido
 
-O comprovante é gerado a partir de um pedido fictício:
-
 | Campo | Valor |
 |-------|-------|
-| Pedido | #20261145 |
-| Cliente | Lucas Ferreira |
-| Status | Aprovado |
+| Número do pedido | 1202 |
+| Cliente | MARCOS VILAR |
+| Status atual | Em Separação |
 
-| Produto | Valor |
+**Produtos e preços**
+
+| Produto | Preço |
 |---------|------:|
 | Notebook | R$ 3.500,00 |
 | Mouse | R$ 120,00 |
 | Teclado | R$ 250,00 |
-| **Total (3 produtos)** | **R$ 3.870,00** |
+
+**Status disponíveis:** Aguardando Pagamento, Em Separação, Enviado e Entregue.
 
 ---
 
-## Tecnologias utilizadas
+## Tecnologias e recursos utilizados
 
-| Categoria | Tecnologia / Recurso |
-|-----------|----------------------|
+| Categoria | Recurso |
+|-----------|---------|
 | Linguagem | Python 3 |
-| Saída de dados | `print()`, com múltiplas chamadas |
-| Formatação visual | Caracteres de separação (`=`) para dividir as seções |
+| Armazenamento de dados | Variáveis e listas |
+| Acesso aos dados | Índices de listas |
+| Processamento | `len()` e `sum()` |
+| Formatação de texto | `f-string`, `.center()`, multiplicação de strings e `.replace()` |
+| Formatação numérica | `:.2f` (duas casas decimais) |
+| Saída de dados | `print()` |
 
 O projeto usa apenas recursos nativos do Python, sem bibliotecas externas.
 
@@ -100,7 +96,7 @@ O projeto usa apenas recursos nativos do Python, sem bibliotecas externas.
 
 | Arquivo | Descrição |
 |---------|-----------|
-| `processamento_pedidos.py` | Programa que imprime o comprovante do pedido |
+| `processamento_pedidos.py` | Script que armazena os dados do pedido, processa as informações e imprime o comprovante |
 | `README.md` | Documentação do desafio |
 
 ---
@@ -118,7 +114,7 @@ git clone <url-do-repositorio>
 2. Acesse a pasta do desafio:
 
 ```bash
-cd desafios-python/desafio-02-comprovante-pedidos
+cd desafios-python/desafio-03-sistema-comprovante-pedido
 ```
 
 3. Execute o programa:
@@ -135,33 +131,37 @@ Não há dependências para instalar nem variáveis de ambiente para configurar.
 
 ## Exemplo de utilização
 
-Saída esperada ao executar o programa:
+Resultado esperado ao executar o programa:
 
 ```text
-========== COMPROVANTE ==========
-Pedido: #20261145
-Cliente: Lucas Ferreira
+======== COMPROVANTE =========
+Pedido: #1202
+Cliente: MARCOS VILAR
 
 PRODUTOS:
-Notebook - R$ 3.500,00
+Notebook - R$ 3500,00
 Mouse - R$ 120,00
 Teclado - R$ 250,00
 
-Quantidade: 3 produtos
-Total: R$ 3.870,00
-Status: APROVADO
-================================
+Quatidade: 3 Produtos
+Total: R$3870.0
+Status: Em Separação
+==============================
+
 ```
+
+> No terminal, o título aparece centralizado e as seções são separadas por divisórias.
 
 ---
 
 ## Aprendizados
 
-- Uso de `print()` para montar uma saída completa, com múltiplas chamadas.
-- Organização de um texto em seções (cabeçalho, produtos, resumo e rodapé).
-- Uso de caracteres para separar seções e dar identidade visual a uma saída de terminal.
-- Apresentação de valores monetários em reais.
-- Destaque textual de informações importantes, como o status do pedido.
+- Armazenamento de dados em variáveis e listas.
+- Acesso a elementos de listas por índice.
+- Uso de `len()` para contar elementos e de `sum()` para somar valores.
+- Formatação de texto com `f-string`, `.center()` e multiplicação de strings.
+- Formatação de números com `:.2f` e ajuste do separador decimal com `.replace()`.
+- Organização de dados e saída em um fluxo simples: armazenar, processar e exibir.
 
 ---
 
@@ -170,6 +170,6 @@ Status: APROVADO
 > Ideias para evolução. **Ainda não implementadas.**
 
 - [ ] Receber os dados do pedido pelo teclado
-- [ ] Calcular automaticamente o total e a quantidade de produtos
-- [ ] Gerar o comprovante para pedidos com quantidades variadas de produtos
+- [ ] Permitir escolher o status entre as opções disponíveis
+- [ ] Exibir o preço junto ao produto percorrendo as listas com um laço de repetição
 - [ ] Salvar o comprovante em arquivo
