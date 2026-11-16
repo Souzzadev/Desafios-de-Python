@@ -172,4 +172,8 @@ Status: Em Separação
 - [ ] Receber os dados do pedido pelo teclado
 - [ ] Permitir escolher o status entre as opções disponíveis
 - [ ] Exibir o preço junto ao produto percorrendo as listas com um laço de repetição
+<<<<<<< HEAD
 - [ ] Salvar o comprovante em arquivo
+=======
+- [ ] Salvar o comprovante em arquivo
+>>>>>>> e707c916af060e39cccc43f1a8617f446f8a5559
