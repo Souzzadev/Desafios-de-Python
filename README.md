@@ -95,3 +95,4 @@ Os desafios usam apenas recursos nativos do Python. Se algum precisar de depend�
 Este repositório mostra o meu progresso na prática de Python. Os primeiros desafios são de nível básico, e novos níveis serão adicionados conforme eu avançar nos estudos.
 
 - [x] Desafio 01: Cadastro e classificação de funcionários
+- [x] Desafio 02: Controle de estoque
