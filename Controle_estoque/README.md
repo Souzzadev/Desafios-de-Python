@@ -88,13 +88,13 @@ Este projeto simula um módulo de controle de estoque, no qual é possível acom
 
 ```text
 .
-├── <nome-do-arquivo>.py
+├── processamento_pedidos.py
 └── README.md
 ```
 
 | Arquivo | Descrição |
 |---------|-----------|
-| `<nome-do-arquivo>.py` | Programa com entrada de dados, classificação do estoque, relatório e gráfico |
+| `processamento_pedidos.py ` | Programa com entrada de dados, classificação do estoque, relatório e gráfico |
 | `README.md` | Documentação do desafio |
 
 ---
