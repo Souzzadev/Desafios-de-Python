@@ -56,6 +56,9 @@ desafios-python/
 └── desafio-01-cadastro-funcionarios/
     ├── README.md
     └── cadastro_funcionarios.py
+└── desafio-02-controle_estoques/
+    ├── README.md
+    └── processamento_pedidos.py
 ```
 ---
 
