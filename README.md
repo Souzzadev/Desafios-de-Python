@@ -43,6 +43,9 @@ Os desafios partem de situações próximas do ambiente profissional, como cadas
 | # | Desafio | Nível | Conceitos praticados |
 |:-:|---------|:-----:|----------------------|
 | 01 | [Cadastro e classificação de funcionários](desafio-01-cadastro-funcionarios) | Básico | `input()`, `print()`, strings, `if`/`elif`/`else`, `.format()`, casas decimais |
+| 02 | [Comprovante de processamento de pedidos](desafio-02-comprovante-pedidos) | Básico | `print()`, múltiplas chamadas de `print()`, separadores de seção |
+| 03 | [Controle de estoque](desafio-03-controle-estoque) | Básico | `input()`, `int`/`float`, `if`/`elif`/`else`, `f-string`, `.center()`, listas, Matplotlib |
+| 04 | [Calculadora de faturamento](desafio-04-calculadora-faturamento) | Básico | Funções (`def`), parâmetros, `return`, duas casas decimais |
 
 > A tabela é atualizada a cada novo desafio concluído.
 
@@ -53,13 +56,20 @@ Os desafios partem de situações próximas do ambiente profissional, como cadas
 ```text
 desafios-python/
 ├── README.md
-└── desafio-01-cadastro-funcionarios/
+├── desafio-01-cadastro-funcionarios/
+│   ├── README.md
+│   └── bd_employee.py
+├── desafio-02-comprovante-pedidos/
+│   ├── README.md
+│   └── processamento_pedidos.py
+├── desafio-03-controle-estoque/
+│   ├── README.md
+│   └── controle_estoque.py
+└── desafio-04-calculadora-faturamento/
     ├── README.md
-    └── cadastro_funcionarios.py
-└── desafio-02-controle_estoques/
-    ├── README.md
-    └── processamento_pedidos.py
+    └── calculo_faturamento.py
 ```
+
 ---
 
 ## Como executar um desafio
@@ -72,7 +82,7 @@ desafios-python/
 git clone <url-do-repositorio>
 ```
 
-2. Acesse a pasta do desafio desejado:
+2. Acesse a pasta do desafio desejado (exemplo com o Desafio 01):
 
 ```bash
 cd desafios-python/desafio-01-cadastro-funcionarios
@@ -81,12 +91,18 @@ cd desafios-python/desafio-01-cadastro-funcionarios
 3. Execute o programa:
 
 ```bash
-python cadastro_funcionarios.py
+python bd_employee.py
 ```
 
 > Em alguns sistemas, o comando pode ser `python3`.
 
-Os desafios usam apenas recursos nativos do Python. Se algum precisar de dependências, isso estará indicado no README da respectiva pasta.
+A maioria dos desafios usa apenas recursos nativos do Python. O **Desafio 03** usa a biblioteca Matplotlib, que deve ser instalada antes de executar:
+
+```bash
+pip install matplotlib
+```
+
+O README de cada pasta indica as dependências e o arquivo a ser executado.
 
 ---
 
@@ -95,4 +111,6 @@ Os desafios usam apenas recursos nativos do Python. Se algum precisar de depend�
 Este repositório mostra o meu progresso na prática de Python. Os primeiros desafios são de nível básico, e novos níveis serão adicionados conforme eu avançar nos estudos.
 
 - [x] Desafio 01: Cadastro e classificação de funcionários
-- [x] Desafio 02: Controle de estoque
+- [x] Desafio 02: Comprovante de processamento de pedidos
+- [x] Desafio 03: Controle de estoque
+- [x] Desafio 04: Calculadora de faturamento
