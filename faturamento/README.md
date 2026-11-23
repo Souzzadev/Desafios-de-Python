@@ -14,7 +14,6 @@
 ## Índice
 
 - [Sobre o projeto](#sobre-o-projeto)
-- [Demonstração](#demonstração)
 - [Funcionalidades](#funcionalidades)
 - [A função calcular_faturamento](#a-função-calcular_faturamento)
 - [Tecnologias e recursos utilizados](#tecnologias-e-recursos-utilizados)
@@ -33,16 +32,6 @@ Este projeto simula uma tarefa de assistente de dados em uma empresa de comérci
 **O problema:** o cálculo do valor total de uma venda (quantidade vezes preço unitário) é repetido a cada venda registrada, e escrevê-lo de novo em cada ponto do código gera repetição e risco de erros.
 
 **A solução:** uma função reutilizável, `calcular_faturamento`, que recebe a quantidade e o preço unitário, calcula o faturamento, devolve o resultado com `return` e o apresenta com duas casas decimais.
-
----
-
-## Demonstração
-
-> Adicione aqui uma captura de tela ou GIF da execução no terminal.
-
-<!-- Exemplo, depois de criar o arquivo:
-![Demonstração da execução](assets/demo.gif)
--->
 
 ---
 

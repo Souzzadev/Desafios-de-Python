@@ -47,6 +47,7 @@ Os desafios partem de situações próximas do ambiente profissional, como cadas
 | 03 | [Controle de estoque](desafio-03-controle-estoque) | Básico | `input()`, `int`/`float`, `if`/`elif`/`else`, `f-string`, `.center()`, listas, Matplotlib |
 | 04 | [Calculadora de faturamento](desafio-04-calculadora-faturamento) | Básico | Funções (`def`), parâmetros, `return`, duas casas decimais |
 | 05 | [Simulador de desempenho de vendas](desafio-05-simulador-desempenho-vendas) | Intermediário | `random`, listas, funções (`def`), `return`, Matplotlib |
+| 06 | [Análise de desempenho financeiro](desafio-06-analise-desempenho-financeiro) | Intermediário | Listas, `lambda`, `map()`, funções (`def`), `return`, Matplotlib |
 
 > A tabela é atualizada a cada novo desafio concluído.
 
@@ -72,6 +73,9 @@ desafios-python/
 └── desafio-05-simulador-desempenho-vendas/
 │   ├── README.md
 │   └── desempenho_vendas.py
+└── desafio-06-analise-desempenho-financeiro/
+    ├── README.md
+    └── analise_financeiro.py
 ```
 
 ---
@@ -119,3 +123,4 @@ Este repositório mostra o meu progresso na prática de Python. Os primeiros des
 - [x] Desafio 03: Controle de estoque
 - [x] Desafio 04: Calculadora de faturamento
 - [x] Desafio 05: Simulador de desempenho de vendas
+- [x] Desafio 06: Análise de desempenho financeiro
