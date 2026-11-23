@@ -24,18 +24,15 @@ faturamento_medio = calcular_faturamento_medio(com_desconto)
 print(f"Faturamento total com desconto: R$ {faturamento_total:.2f}")
 print(f"Faturamento médio com desconto: R$ {faturamento_medio:.2f}")
 
-print(30*"=")
-print("RELATÓRIO FINANCEIRO".center(30))
-print(30*"=")
-print()
-print(f"Notebook")
-print(f"faturamento original: R$ {faturamento[0]:.2f}")
-print(f"Faturamento com desconto: R$ {com_desconto[0]:.2f}")
-print()
-print(f"Mouse")
-print(f"faturamento original: R$ {faturamento[1]:.2f}")
-print(f"Faturamento com desconto: R$ {com_desconto[1]:.2f}")
-print(30*"=")
+print(40*"=")
+print("RELATÓRIO FINANCEIRO".center(40))
+print(40*"=")
+for i in range(len(produtos)):
+    print(f"Produto: {produtos[i]}")
+    print(f"Faturamento original: R$ {faturamento[i]:.2f}")
+    print(f"Faturamento com desconto: R$ {com_desconto[i]:.2f}")
+    print("-" * 40)
+print(40*"=")
 
 
 
